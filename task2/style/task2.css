@@ -1,0 +1,123 @@
+html {
+    font-family: "Lucida Sans", sans-serif;
+}
+
+:root {
+    --white: #ffffff;
+    --darkgrey: #747682;
+    --mediumlightgrey: #707176;
+    --darkgreen: #3D8168;
+    --black: #000000;
+    --bluishblack: #242A31;
+    --cream: #F2E9E2;
+}
+
+body {
+    size: 100%;
+    background-color: var(--cream);
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 400px 370px;
+    justify-content: center;
+    align-content: center;
+    background-color: var(--cream);
+    height: 500px;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: var(--white);
+    text-align: start;
+    padding: 20px 0;
+    margin-top: 200px;
+    font-size: 30px;
+    height: 500px;
+}
+
+#image {
+    border-top-left-radius: 25px;
+    background-image: url(../assests/imgs/acqua-di-gio-homme.jpg);
+    background-position: center;
+}
+
+#info {
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+h6 {
+    color: var(--darkgrey);
+    margin-left: 20px;
+    letter-spacing: 10px;
+}
+
+h2 {
+    color: var(--black);
+    margin-left: 20px;
+}
+
+#details {
+    color: var(--mediumlightgrey);
+    margin: 20px;
+    font-size: medium;
+
+}
+
+#price {
+    color: var(--darkgreen);
+    margin-left: 20px;
+    font-size: xx-large;
+    font-weight: bolder;
+    word-spacing: 60px;
+
+}
+
+span {
+    color: var(--mediumlightgrey);
+    text-decoration-line: line-through;
+    font-weight: normal;
+    font-size: large;
+    line-height: 1.7;
+}
+
+button {
+    background-color: var(--darkgreen);
+    border: none;
+    color: var(--white);
+    text-align: center;
+    cursor: pointer;
+    padding: 14px 40px;
+    border-radius: 8px;
+    margin-left: 30px;
+    width: 80%;
+    font-size: medium;
+}
+
+i {
+    margin-right: 15px;
+}
+
+
+@media only screen and (max-width: 650px) {
+
+    .grid-container {
+        grid-template-columns: 100%;
+        grid-template-rows: 400px;
+        margin: 20px;
+    }
+
+    #image {
+        background-position:top;
+        border-top-left-radius: 0px;
+    }
+
+    #info {
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    
+}
